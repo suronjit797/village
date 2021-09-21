@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(145, 218, 236);
+    overflow: hidden;
+}
+.main{
+    height: 100vh;
+    position: relative;
+
+}
+.main img{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* prasuit */
+.prasuit1 img{
+    height: auto;
+    width: 80px;
+    z-index: 10;
+    position: absolute;
+    top: 60px;
+    left: -15%;
+    animation: prasuit 120s linear infinite;
+}
+.prasuit2 img{
+    height: auto;
+    width: 120px;
+    z-index: 13;
+    position: absolute;
+    top: 5px;
+    left: -15%;
+    animation: prasuit 80s linear infinite;
+}
+
+@keyframes prasuit{
+    0%{left: -15%;}
+    50%{left: 115%;}
+    100%{left: -15%;}
+    
+}
+/* cloud */
+.cloud1 img{
+    height: auto;
+    width: 200px;
+    z-index: 10;
+    position: absolute;
+    top: 60px;
+    right: 10%;
+    animation: cloud 80s linear infinite;
+}
+.cloud2 img{
+    height: auto;
+    width: 120px;
+    z-index: 8;
+    position: absolute;
+    top: 5px;
+    right: 10%;
+    animation: cloud 120s linear infinite;
+}
+.cloud3 img{
+    height: auto;
+    width: 120px;
+    z-index: 8;
+    position: absolute;
+    top: 30px;
+    right: 50%;
+    animation: cloud 200s linear infinite;
+}
+@keyframes cloud{
+    0%{right: -15%;}
+    50%{right: 115%;}
+    100%{right: -15%;}
+    
+}
+
+/* wind-mill */
+.wind-mill{
+    position: absolute;
+    bottom: 0;
+    right: 150px;
+}
+
+.wind-inner{
+    position: relative;
+}
+.wind-fan{
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    animation: wind-fan 3s linear infinite;
+}
+@keyframes wind-fan{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+
+}
